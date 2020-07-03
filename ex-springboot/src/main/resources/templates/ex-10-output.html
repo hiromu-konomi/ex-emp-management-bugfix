@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h5>ユーザ登録</h5>
+	名前：<span th:text="${application.user.name}"></span><br>
+	年齢：<span th:text="${application.user.age}"></span><br>
+	コメント：<div th:text="${application.user.comment}"></div><br>
+	<a href="ex-10-output2.html" th:href="@{/ex10/output2}">output2.htmlへリンク</a>
+</body>
+</html>

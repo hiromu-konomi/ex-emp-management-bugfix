@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.tymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<span th:each="name,status:${nameList}">
+		<span th:text="${status.count}"></span>.<span th:text="${name}"></span><br>
+	</span>
+</body>
+</html>

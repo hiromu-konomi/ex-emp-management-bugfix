@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<span th:if="${member.age >= 20}" th:text="成人式に参加できます"></span>
+	<span th:if="${member.age < 20}" th:text="未成年です"></span>
+</body>
+</html>

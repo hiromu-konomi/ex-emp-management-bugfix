@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	$(function(){
+		alert("HELLO WORLD");
+		console.log("hero world");
+		
+		$("*").css("color","green");
+		$("div,#sample").css("font-size","5px")
+		$("#sample > span").css("font-size","30px")
+		$("form + input").css("background-color","red");
+		
+		$("form > input:first").val('400');
+		$("form > input:even").val('100');
+		
+		$("div").text();
+	});
+</script>
+</head>
+<body>
+	<form>
+		サンプル1<input class="inputClass" type="text" value="1"><br>
+		サンプル2<input class="inputClass" type="text" value="2"><br>
+		サンプル3<input class="inputClass" type="text" value="3"><br>
+		サンプル4<input class="inputClass" type="text" value="4"><br>
+		サンプル5<input class="inputClass" type="text" value="5">
+		
+		<div id="sample">
+			<span>論理ロジカル</span><br>
+			<span>魔法天使クリーミーマミ</span>
+		</div>
+		<div>
+			<span>銀杏BOYZ</span>
+		</div>
+	</form>
+</body>
+</html>

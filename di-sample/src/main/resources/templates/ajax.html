@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS overflow</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<script>
+	$(function(){
+		$('#button').click(
+				function(){
+					$.ajax({
+						url:'../src/main/java/com/example/controller/AjaxController.java',
+						dataType:'Text'
+					}).done(function(data){
+						//alert("ok");
+						$('#text').html(data);
+					}).fail(function(XMLHttpRepuest, textStatus, errorThrown){
+						alert("リクエスト時にエラーが発生しました：" + textStatus + ":¥n" + errorThrown);
+					})
+				}
+		);
+	});
+</script>
+</head>
+<body>
+	<input type="button" id="button" value="button"/>
+	<br/>
+	<div id="text"></div>
+</body>
+</html>
